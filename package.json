@@ -4,17 +4,18 @@
   "description": "Tests runtime of JSON serialization/deserialization and logic operations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node": "node ./src/testJson/main.js",
+    "bun": "bun run ./src/testJson/main.js"
   },
   "keywords": [],
   "author": "Shaked F",
   "license": "ISC",
   "dependencies": {
-    "commander": "^9.5.0",
-    "exceljs": "^4.3.0",
-    "os-utils": "^0.0.14"
+    "commander": "9.5.0",
+    "exceljs": "4.3.0",
+    "os-utils": "0.0.14"
   },
   "devDependencies": {
-    "@types/node": "^18.13.0"
+    "@types/node": "18.13.0"
   }
 }
