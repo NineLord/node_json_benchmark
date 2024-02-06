@@ -4,8 +4,9 @@
   "description": "Tests runtime of JSON serialization/deserialization and logic operations",
   "main": "index.js",
   "scripts": {
-    "node": "node ./src/testJson/main.js",
-    "bun": "bun run ./src/testJson/main.js"
+    "start": "node --max-old-space-size=6144 ./src/testJson/main.js",
+    "start_bun": "bun run ./src/testJson/main.js",
+    "start_bun_limit": "BUN_JSC_forceRAMSize=6144 bun run ./src/testJson/main.js"
   },
   "keywords": [],
   "author": "Shaked F",
